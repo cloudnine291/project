@@ -1,0 +1,38 @@
+class Animal:
+    def move(self):
+        pass
+
+class Dog(Animal):
+    def move(self):
+        print("Running 🐕")
+
+class Bird(Animal):
+    def move(self):
+        print("Flying 🐦")
+
+class Fish(Animal):
+    def move(self):
+        print("Swimming 🐟")
+
+class Vehicle:
+    def move(self):
+        pass
+
+class Car(Vehicle):
+    def move(self):
+        print("Driving 🚗")
+
+class Plane(Vehicle):
+    def move(self):
+        print("Flying ✈️")
+
+class Boat(Vehicle):
+    def move(self):
+        print("Sailing ⛵")
+
+# List of different objects
+entities = [Dog(), Bird(), Fish(), Car(), Plane(), Boat()]
+
+# Calling move() on each entity
+for entity in entities:
+    entity.move()
